@@ -1,52 +1,63 @@
+'use strict';
 
 //Prompt with the first question.  Takes user input, converts to upper case and sets variable.
-var homeTown = prompt('I was born in the midwest.  Please enter a "yes" or "no" response.').toUpperCase();
+var homeTown = prompt('I was born in Wisconsin.  Please enter a "yes" or "no" response.').toUpperCase();
 homeTown = homeTown.toUpperCase();
 
 //Shows approprate alert based on yes/no response.
 if (homeTown.toUpperCase() === 'YES' || homeTown.toUpperCase() === 'Y') {
-alert('Correct!  I was born in Illinois');
+    alert('Incorrect.  I was born in Illinois.');
 } else {
-alert('Incorrect, I was born in Illinois');
+  alert('Correct.  I was born in Illinois');
 }
 
-//Repeast process with second quesiton.
-var favHobby = prompt('My favorite hobby is photography.  Please enter a "yes" or "no" response.').toUpperCase();
-favHobby = favHobby.toUpperCase();
+//logs user respone in the console
+console.log('User response to born in WI '+ homeTown);
 
-if (favHobby.toUpperCase() === 'YES' || favHobby.toUpperCase() === 'Y') {
-alert('Incorrect.  Travel is my favorite hobby but photography is a close second.');
+//Repeat for questions 2-5.
+var pets = prompt('I have a cat.  Please enter a "yes" or "no" response.').toUpperCase();
+pets = pets.toUpperCase();
+
+if (pets.toUpperCase() === 'YES' || pets.toUpperCase() === 'Y') {
+  alert('Incorrect.  No pet at the momment, but pets have always been dogs.');
 } else {
-alert('Correct.  Travel is my favorite hobby but photography is a close second.');
+  alert('Correct.  No pet at the momment, but pets have always been dogs.');
 }
 
-//Repeast process with third quesiton.
+console.log('User response to cat '+ pets);
+
+
 var liveAbroad = prompt('I have lived abroad.  Please enter a "yes" or "no" response.').toUpperCase();
 liveAbroad  = liveAbroad.toUpperCase();
 
 if (liveAbroad.toUpperCase() === 'YES' || liveAbroad.toUpperCase() === 'Y') {
-alert('Correct!  I have lived in Ireland and France');
+  alert('Correct.  I have lived in Dublin, Ireland and Paris, France.');
 } else {
-alert('Incorrect.  I have lived in Ireland and France.');
+  alert('Incorrect.  I have lived in Dublin, Ireland and Paris, France.');
 }
 
-//Repeast process with fourth quesiton.
-var favCity = prompt('My favorite city is Chicago.  Please enter a "yes" or "no" response.').toUpperCase();
-favCity = favCity.toUpperCase();
+console.log('User response to live abroad '+ liveAbroad);
 
-if (favCity.toUpperCase() === 'YES' || favCity.toUpperCase() === 'Y') {
-alert('Incorrect.  My favorite city is Paris, I lived in Chicago for most of my life.');
+
+var skyDive = prompt('I have been skydiving.  Please enter a "yes" or "no" response.').toUpperCase();
+skyDive = skyDive.toUpperCase();
+
+if (skyDive.toUpperCase() === 'YES' || skyDive.toUpperCase() === 'Y') {
+  alert('Incorrect.  Never gone skydiving but I have been paragliding.');
 } else {
-alert('Correct.  Paris is my favorite city, I lived in Chicago for most of my life');
+  alert('Incorrect.  Never gone skydiving but I have been paragliding.');
 }
 
-//Repeast process with fifth quesiton.
-var funFact = prompt('I have been paragliding.  Please enter a "yes" or "no" response.').toUpperCase();
-funFact = funFact.toUpperCase();
+console.log('User response to skydiving is '+ skyDive);
 
-if (funFact.toUpperCase() === 'YES' || funFact.toUpperCase() === 'Y') {
-alert('Correct!  I have been paragliding twice.');
+
+var champion = prompt('I attended a NBA champoinship game.  Please enter a "yes" or "no" response.').toUpperCase();
+champion = champion.toUpperCase();
+
+if (champion.toUpperCase() === 'YES' || champion.toUpperCase() === 'Y') {
+  alert('Correct.  I attended the 1996 NBA finals game when the Chicago Bulls beat the Seattle SuperSonics.');
 } else {
-alert('Incorrect.  I have been paragliding twice.');
+  alert('Incorrect.  I attended the 1996 NBA finals game when the Chicago Bulls beat the Seattle SuperSonics.');
 }
 
+console.log('User response to champion is '+ champion);
