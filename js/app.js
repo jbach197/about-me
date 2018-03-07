@@ -61,3 +61,18 @@ if (champion.toUpperCase() === 'YES' || champion.toUpperCase() === 'Y') {
 }
 
 console.log('User response to champion is '+ champion);
+
+//Question 7 prompting user to guess an item in the array.
+var countryNotVisitedArray = ['norway', 'scotland', 'poland', 'finland', 'hungry', 'croatia'];
+var countryGuess = prompt('Can you guess European countries I have NOT visited').toLowerCase();
+
+
+for(var i = 0; i<5;  i++){
+if(countryNotVisitedArray[i] === countryGuess) {
+  alert('Correct!');
+  break;
+} else {
+  alert('incorrect, try again');
+  prompt('Can you guess European countries I have NOT visited').toLowerCase();
+}
+}
