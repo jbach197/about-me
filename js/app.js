@@ -1,5 +1,5 @@
 'use strict';
-
+function question1(){
 //Prompt with the first question.  Takes user input, converts to upper case and sets variable.
 var homeTown = prompt('I was born in Wisconsin.  Please enter a "yes" or "no" response.').toUpperCase();
 homeTown = homeTown.toUpperCase();
@@ -60,8 +60,11 @@ if (champion.toUpperCase() === 'YES' || champion.toUpperCase() === 'Y') {
   alert('Incorrect.  I attended the 1996 NBA finals game when the Chicago Bulls beat the Seattle SuperSonics.');
 }
 
-console.log('User response to champion is '+ champion);
 
+console.log('User response to champion is '+ champion);
+}
+question1();
+function question7(){
 //Question 7 prompting user to guess an item in the array.
 var countryNotVisitedArray = ['norway', 'scotland', 'poland', 'finland', 'hungry', 'croatia'];
 var countryGuess = prompt('Can you guess European countries I have NOT visited').toLowerCase();
@@ -76,3 +79,5 @@ if(countryNotVisitedArray[i] === countryGuess) {
   prompt('Can you guess European countries I have NOT visited').toLowerCase();
 }
 }
+}
+question2();
