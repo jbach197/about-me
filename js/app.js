@@ -64,6 +64,40 @@ if (champion.toUpperCase() === 'YES' || champion.toUpperCase() === 'Y') {
 
 console.log('User response to champion is '+ champion);
 
+var numToGuess = 15;
+var numUserGuess = parseInt(prompt('Enter a number between 1 and 20.  You have 4 attempts to guess the number'));
+
+
+var numToGuess = Math.floor(Math.random() * 30);
+console.log('Number to guess is ' + numToGuess);
+var numUserGuess = parseInt(prompt('Enter a number between 1 and 30.  You have 4 attempts to guess the number.'));
+
+
+for (var i = 0; i <= 3; i++) {
+
+if (numUserGuess === numToGuess) {
+  alert('Correct guess!!!');
+  console.log('Guess is ' + numUserGuess);
+  break;
+} else if(numUserGuess > numToGuess) {
+  console.log('Guess is ' + numUserGuess);
+  alert('Try again, your guess is too high.');
+  numUserGuess = parseInt(prompt('Enter a number between 1 and 30.  You have 4 attempts to guess the number'));
+} else {
+  console.log('Guess is ' + numUserGuess);
+  alert('Try again, your guess is too low.');
+  numUserGuess = parseInt(prompt('Enter a number between 1 and 30.  You have 4 attempts to guess the number'));
+}
+}
+
+
+
+
+
+
+
+
+
 
 
 //Question 7 prompting user to guess an item in the array.
