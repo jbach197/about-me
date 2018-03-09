@@ -1,18 +1,37 @@
 body {
-  background-color: rgb(240, 233, 233);
+
+  background-color: lightgoldenrodyellow;
+  font-family: Arial, sans-serif;
 }
 
-h1  {
-  color: rgb(41, 151, 69);
-  font-size: 1.5em
+
+header {
+
+  background-color: lavender;
+}
+nav {
+  display: inline;
 }
 
+h1 {
+  
+  color: darkgreen;
+  font-size: 2em;
+}
 h2 {
-  color: rgb(41, 151, 69);
-  font-size: 1.3em
+  color: darkgreen;
+  font-size: 1.25em;
+}
+ol.topten {
+  list-style-type: decimal;
+  list-style-position: outside;
 }
 
 p {
-  color: black
-  font-size: .75em
+  color: black;
+  font-size: 1em;
+}
+
+nav {
+  display: inline;
 }

@@ -14,6 +14,8 @@ if (homeTown.toUpperCase() === 'YES' || homeTown.toUpperCase() === 'Y') {
 //logs user respone in the console
 console.log('User response to born in WI '+ homeTown);
 
+
+
 //Repeat for questions 2-5.
 var pets = prompt('I have a cat.  Please enter a "yes" or "no" response.').toUpperCase();
 pets = pets.toUpperCase();
@@ -62,6 +64,8 @@ if (champion.toUpperCase() === 'YES' || champion.toUpperCase() === 'Y') {
 
 console.log('User response to champion is '+ champion);
 
+
+
 //Question 7 prompting user to guess an item in the array.
 var countryNotVisitedArray = ['norway', 'scotland', 'poland', 'finland', 'hungry', 'croatia'];
 var countryGuess = prompt('Can you guess European countries I have NOT visited').toLowerCase();
@@ -76,3 +80,5 @@ if(countryNotVisitedArray[i] === countryGuess) {
   prompt('Can you guess European countries I have NOT visited').toLowerCase();
 }
 }
+
+
