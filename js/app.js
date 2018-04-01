@@ -5,7 +5,7 @@ alert('Hello ' + userName);
 console.log('User is ' + userName);
 
 var numCorrect = 0
-
+function questions(){
 var homeTown = prompt('I was born in Wisconsin.  Please enter a "yes" or "no" response.').toUpperCase();
 homeTown = homeTown.toUpperCase();
 
@@ -65,12 +65,13 @@ if (champion.toUpperCase() === 'YES' || champion.toUpperCase() === 'Y') {
 console.log('User response to champion is '+ champion);
 console.log('Number Correct: ' + numCorrect);
 
-var numToGuess = Math.floor(Math.random() * 30);
+var numToGuess = Math.floor((Math.random() * 30) + 1);
 console.log('Number to guess is ' + numToGuess);
 var numUserGuess = parseInt(prompt('Enter a number between 1 and 30.  You have 4 attemps to guess the number.'));
 
-for (var i = 0; i <= 3; i++) {
-if (numUserGuess === numToGuess) {
+var i = 0;
+while (i < 3) {
+  if (numUserGuess === numToGuess) {
   alert('Correct guess!!!');
   console.log('Guess is ' + numUserGuess);
   numCorrect ++;
@@ -79,30 +80,38 @@ if (numUserGuess === numToGuess) {
   console.log('Guess is ' + numUserGuess);
   alert('Try again, your guess is too high.');
   numUserGuess = parseInt(prompt('Enter a number between 1 and 30.'));
+  i++;
 } else {
   console.log('Guess is ' + numUserGuess);
   alert('Try again, your guess is too low.');
   numUserGuess = parseInt(prompt('Enter a number between 1 and 30.'));
+  i++;
 }
 }
 console.log('Number Correct: ' + numCorrect);
-var countryNotVisitArray = ['norway','poland', 'romania', 'monaco', 'scotland', 'hungary', 'croatia', 'ukraine', 'turkey'];
-console.log('Countries not visited ' + countryNotVisitArray);
-var countryUserGuess = prompt('Guess a country in Europe I have NOT visited.').toLowerCase();
+
+var countryVisitArray = ['mexico', 'guatemala', 'belize', 'honduras', 'peru', 'chile', 'argentina', 'uruguay']
+console.log('Countries visited ' + countryVisitArray);
+
+var countryUserGuess = prompt('Guess a country in Latin America that I have visited.').toLowerCase();
 console.log(countryUserGuess);
 
-for (var i = 0; i < countryNotVisitArray.length ; i++) {
-if (countryNotVisitArray[i] === countryUserGuess) {
-   alert('Correct!  I have not visited the following countries: Norway, Poland, Romania,  Monaco, Scotland, Hungary, Croatia, Ukraine, Turkey');
+var i = 0;
+while (i < 5) {
+if (countryVisitArray.includes(countryUserGuess)) {
+  alert('Correct!  I have visited the following countries: Mexico, Guatemala,Belize, Honduras, Peru, Chile, Argentina and Uruguay.');
   console.log('Guess is ' + countryUserGuess);
   numCorrect ++;
   break;
-  } else {
-    console.log('Guess is ' + countryUserGuess);
-    alert('Try again, I have visited that country');
-    prompt('Guess a country in Europe I have NOT visited.').toLowerCase();
+ } else {
+  console.log('Guess is ' + countryUserGuess);
+  alert('Try again, I have not visited that country');
+  countryUserGuess = prompt('Guess a country in Latin America that I have visited.').toLowerCase();
+  i++;
 }
 }
+}
+questions();
 console.log('Number Correct: ' + numCorrect);
 
-alert('Thanks for playing '+ userName + 'you answered ' + numCorrect + ' of 7 questions correctly.' )
+alert('Thanks for playing '+ userName + ' you answered ' + numCorrect + ' of 7 questions correctly.' )

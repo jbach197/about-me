@@ -1,37 +1,49 @@
 body {
-
-  background-color: lightgoldenrodyellow;
-  font-family: Arial, sans-serif;
+  background-color: rgb(240, 233, 233);
 }
 
-
-header {
-
-  background-color: lavender;
-}
-nav {
-  display: inline;
+h1  {
+  color: rgb(41, 151, 69);
+  font-size: 1.5em;
+  padding: 1em;
 }
 
-h1 {
-  
-  color: darkgreen;
-  font-size: 2em;
-}
 h2 {
-  color: darkgreen;
-  font-size: 1.25em;
+  color: rgb(41, 151, 69);
+  font-size: 1.3em;
 }
-ol.topten {
-  list-style-type: decimal;
-  list-style-position: outside;
+
+h3{
+  color: rgb(41, 151, 69);
+  font-size: 1.1em;
+  padding: .75em;
 }
 
 p {
   color: black;
-  font-size: 1em;
+  margin: 1.5em;
 }
 
-nav {
-  display: inline;
+.left {
+  float: Left;
+  padding: 1em;
+  width: 40%;
+}
+.right {
+  float: Right;
+  padding: 1em;
+  width: 40%;
+}
+
+img.small {
+  width: 250px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: upper-roman;
+  padding: .25em;
 }
