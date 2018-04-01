@@ -6,6 +6,7 @@ console.log('User is ' + userName);
 
 var numCorrect = 0
 function questions(){
+//Prompt with the first question.  Takes user input, converts to upper case and sets variable.
 var homeTown = prompt('I was born in Wisconsin.  Please enter a "yes" or "no" response.').toUpperCase();
 homeTown = homeTown.toUpperCase();
 
